@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Feirão Limpe seu Nome</title>
+	
+	<script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous">
+ 	</script>
+
+	<link
+		rel="stylesheet" 
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		crossorigin="anonymous">
+
+	<link
+		rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+		crossorigin="anonymous">
+
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous">
+	</script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <style type="text/css">
+	    @media only screen and (max-width: 640px) {
+	    	#lhc_status_container {
+				margin-bottom: 0 !important;
+			}
+		}
+    </style>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<nav class="col-lg-4 col-lg-offset-8 col-md-6 col-md-offset-3">
+					<a href="#como-funciona">
+						<button class="header--button">Como funciona</button>
+					</a>
+					<a href="#">
+						<button class="header--button">Perguntas frequentes</button>
+					</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<section class="content container">
+		<div class="row">
+			
+
+			<div class="col-sm-4">
+				<img class="content--img" src="img/feirao-logo.png">
+				<img class="content--img" src="img/nao-paga-mesmo.png">
+			</div>
+
+
+			<div class="col-sm-8">
+
+				<div class="block-empresas">
+					<h3>Empresas participantes:</h3>
+					<div class="row">
+						<div class="col-sm-3 col-xs-6">
+							<img class="block-empresas--img" src="img/logo-parceiros-1.png">
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<img class="block-empresas--img" src="img/logo-parceiros-2.png">
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<img class="block-empresas--img" src="img/logo-parceiros-3.png">
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<img class="block-empresas--img" src="img/logo-parceiros-4.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="block-main-text">
+					<hr>
+					<h1>Negocie sua dívida com condições imperdíveis!</h1>
+					<h2>Não perca a oportunidade de quitar sua dívida com descontos de 100% nos juros e até 40% no valor principal.</h2>
+					<hr>
+					<h3>Nosso serviço é completamente <strong>gratuito</strong> para você! Não cobramos nenhum tipo de taxa.</h3>
+				</div>
+
+				<form class="block-form" method="POST" action="">
+					<div class="row">
+						<div class="col-xs-12 block-form--input-row">
+							<label class="block-form--label">CPF:</label>
+							<input class="block-form--input" type="text" name="cpf" id="cpf" placeholder="CPF">
+						</div>
+						<div class="col-xs-12 block-form--input-row">
+							<label class="block-form--label">Data de nascimento:</label>
+							<input class="block-form--input" type="date" name="dataDeNascimento" id="dataDeNascimento">
+						</div>
+						<div class="col-xs-12 block-form--input-row">
+							<label class="block-form--label">Telefone celular:</label>
+							<input class="block-form--input" type="tel" name="telefone" id="telefone" placeholder="Telefone celular">
+						</div>
+						<div class="col-xs-12 block-form--input-row">
+							<input class="block-form--submit" type="submit" name="submit" id="submit" placeholder="Buscar dívida">
+						</div>
+					</div>
+				</form>
+
+				<div class="content--link">
+					<hr>
+					<a href="#">Retire aqui a 2º via do seu boleto</a>
+				</div>
+
+			</div>
+
+
+		</div>
+	</section>
+
+	<footer id="como-funciona" class="footer">
+		<div class="container">
+			<h1 class="footer--text footer--text__underlined">Como funciona</h1>
+			<div class="row">
+				<div class="footer--col col-sm-4">
+					<img class="footer--img" src="img/icones-1.png">
+					<h2 class="footer--text">Procure</h2>
+					<h3 class="footer--text">Consulte suas dívidas negociáveis através de seu CPF e Data de Nascimento</h3>
+				</div>
+				<div class="footer--col col-sm-4">
+					<img class="footer--img" src="img/icones-2.png">
+					<h2 class="footer--text">Negocie</h2>
+					<h3 class="footer--text">Negocie suas dívidas com preços que cabem no seu bolso</h3>
+				</div>
+				<div class="footer--col col-sm-4">
+					<img class="footer--img" src="img/icones-3.png">
+					<h2 class="footer--text">Gere o boleto</h2>
+					<h3 class="footer--text">Após fechar seu acordo, gere o boleto e limpe o seu nome!</h3>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
