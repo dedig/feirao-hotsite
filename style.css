@@ -18,6 +18,8 @@ h1, a {
 h1 {
 	font-size: 2.2em;
 	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 h2, h3, input, button, label {
@@ -45,18 +47,21 @@ a:hover, a:active, a:focus {
 }
 
 .header {
-	background-color: #1A4757;
-	padding: 20px 10px 10px;
+	position: absolute;
+	width: 100%;
+	float: right;
+	padding: 10px;
 }
 
 .header--button {
 	background-color: transparent;
-	color: #fff;
-	border: 3px solid  #fff;
-	border-radius: 5px;
-	padding: 5px 15px;
+	color: #1A4757;
+	border: none;
+	width:100%;
 	margin: 0 10px 10px 0;
 	font-weight: bold;
+	display: block;
+	text-align: right;
 }
 
 .header--button:hover {
@@ -213,5 +218,12 @@ a:hover, a:active, a:focus {
 	.footer--img {
 		width: 30%;
 		margin-left: 0;
+	}
+}
+
+/* Livehelper */
+@media only screen and (max-width: 640px) {
+	#lhc_status_container {
+		margin-bottom: 0 !important;
 	}
 }
