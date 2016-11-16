@@ -78,6 +78,15 @@ a:hover, a:active, a:focus {
  	outline: none;
  }
 
+.content {
+	padding: 30px 0;
+	background: rgb(238,255,238);
+	background: -moz-linear-gradient(top,  rgba(238,255,238,1) 0%, rgba(255,255,255,1) 99%);
+	background: -webkit-linear-gradient(top,  rgba(238,255,238,1) 0%,rgba(255,255,255,1) 99%);
+	background: linear-gradient(to bottom,  rgba(238,255,238,1) 0%,rgba(255,255,255,1) 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeffee', endColorstr='#ffffff',GradientType=0 );
+}
+
 .content--img {
 	padding: 20px;
 	width: 100%;
@@ -89,33 +98,36 @@ a:hover, a:active, a:focus {
 }
 
 .block-empresas {
-	margin: 50px 0;
+	padding: 25px 0;
+	background-color: #dee;
 }
 
 .block-empresas--img {
 	margin: 20px 0;
-	width: 100%;
+	width: 60%;
 }
 
 .block-main-text {
 	margin: 50px 0;
+	text-align: center;
 }
 
 .block-form--input-row {
-	height: 60px;
+	height: 70px;
 	margin: 10px 0;
 	padding-right: 0;
 }
 
 .block-form--label {
-	width: 25%;
+	width: 15%;
 	text-align: left;
+	color: #fff;
 }
 
 .block-form--input {
-	width: 65%;
+	width: 83%;
 	height: 100%;
-	padding: 10px;
+	padding: 15px 2%;
 	border: 2px solid #006a00;
 	border-radius: 5px;
 }
@@ -135,7 +147,7 @@ a:hover, a:active, a:focus {
 	color: #fff;
 	padding: 5px 35px;
 	font-weight: bold;
-	margin-left: 25%;
+	margin-left: 15%;
 	border: none;
 	border-radius: 5px;
 }
@@ -207,7 +219,7 @@ a:hover, a:active, a:focus {
 	}
 
 	.block-empresas--img {
-		width: 70%;
+		width: 50%;
 	}
 
 	* {
@@ -222,8 +234,15 @@ a:hover, a:active, a:focus {
 }
 
 /* Livehelper */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px)
+{
+
+	.block-empresas--img {
+		width: 70%;
+	}
+
 	#lhc_status_container {
 		margin-bottom: 0 !important;
 	}
+
 }
