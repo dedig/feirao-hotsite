@@ -194,9 +194,19 @@ a:hover, a:active, a:focus {
  /* lg */
 @media screen and (max-width: 1200px)
 {
+	.header {
+		position: static;
+		width: 100%;
+	}
 
 	.header--button {
-		width: 100%;
+		text-align: center;
+		width: 30%;
+		float: left;
+	}
+
+	.hidden-1200 {
+		display: none;
 	}
 
 }
