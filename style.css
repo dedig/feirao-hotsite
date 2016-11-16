@@ -216,6 +216,27 @@ a:hover, a:active, a:focus {
 @media screen and (max-width: 992px)
 {
 
+	.block-form--input-row {
+		margin: 0 5%;
+		float: left;
+		width: 90%;
+		height: auto;
+	}
+
+	.block-form--label {
+		width: 100%;
+		margin: 20px 0 10px;
+	}
+
+	.block-form--input {
+		width: 100%;
+		height: 60px;
+	}
+
+	.block-form--submit {
+		margin: 20px 0 0;
+		padding: 20px;
+	}
 }
 
 
