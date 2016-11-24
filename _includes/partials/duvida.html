@@ -1,0 +1,10 @@
+{% if include.link %}
+    <a href="{{include.link}}">
+{% endif %}
+
+    <h3>{{include.pergunta}}</h3>
+    <p> <span class="r">R:</span> {{include.texto}} </p>
+
+{% if include.link %}
+</a>
+{% endif %}
