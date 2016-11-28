@@ -53,7 +53,7 @@ a:hover, a:active, a:focus {
 	padding: 10px;
 }
 
-.header--button {
+.header__button {
 	background-color: transparent;
 	color: #1A4757;
 	border: none;
@@ -64,17 +64,17 @@ a:hover, a:active, a:focus {
 	text-align: right;
 }
 
-.header--button:hover {
+.header__button:hover {
 	color: #5E8B9B;
 	border-color: #5E8B9B;
 }
 
-.header--button:active {
+.header__button:active {
 	color: #4fb886;
 	border-color: #4fb886;
 }
 
- .header--button:focus {
+ .header__button:focus {
  	outline: none;
  }
 
@@ -87,12 +87,12 @@ a:hover, a:active, a:focus {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeffee', endColorstr='#ffffff',GradientType=0 );
 }
 
-.content--img {
+.content__img {
 	padding: 20px;
 	width: 100%;
 }
 
-.content--link {
+.content__link {
 	margin: 20px 0;
 	text-align: center;
 }
@@ -102,7 +102,7 @@ a:hover, a:active, a:focus {
 	background-color: #dee;
 }
 
-.block-empresas--img {
+.block-empresas__img {
 	margin: 20px 0;
 	width: 60%;
 }
@@ -112,19 +112,19 @@ a:hover, a:active, a:focus {
 	text-align: center;
 }
 
-.block-form--input-row {
+.block-form__input-row {
 	height: 70px;
 	margin: 10px 0;
 	padding-right: 0;
 }
 
-.block-form--label {
+.block-form__label {
 	width: 15%;
 	text-align: left;
 	color: #fff;
 }
 
-.block-form--input {
+.block-form__input {
 	width: 83%;
 	height: 100%;
 	padding: 15px 2%;
@@ -132,16 +132,16 @@ a:hover, a:active, a:focus {
 	border-radius: 5px;
 }
 
-.block-form--input:hover {
+.block-form__input:hover {
 	border-color: #009d00;
 }
 
-.block-form--input:active, .block-form--input:focus {
+.block-form__input:active, .block-form__input:focus {
 	border-color: #00cf00;
 	outline: none;
 }
 
-.block-form--submit {
+.block-form__submit {
 	height: 100%;
 	background-color: #006a00;
 	color: #fff;
@@ -152,15 +152,15 @@ a:hover, a:active, a:focus {
 	border-radius: 5px;
 }
 
-.block-form--submit:hover {
+.block-form__submit:hover {
 	background-color: #004800;
 }
 
-.block-form--submit:active {
+.block-form__submit:active {
 	background-color: #002600;
 }
 
-.block-form--submit:focus {
+.block-form__submit:focus {
 	outline: none;
 }
 
@@ -169,21 +169,21 @@ a:hover, a:active, a:focus {
 	padding: 100px 0;
 }
 
-.footer--col {
+.footer__col {
 	margin: 40px 0 20px;
 }
 
-.footer--img {
+.footer__img {
 	width: 50%;
 	margin-left: 25%;
 }
 
-.footer--text {
+.footer__text {
 	color: #fff;
 	text-align: center;
 }
 
-.footer--text__underlined {
+.footer__text--underlined {
 	padding-bottom: 10px;
 	border-bottom: 3px solid #006a00;
 }
@@ -199,7 +199,7 @@ a:hover, a:active, a:focus {
 		width: 100%;
 	}
 
-	.header--button {
+	.header__button {
 		text-align: center;
 		width: 30%;
 		float: left;
@@ -216,24 +216,24 @@ a:hover, a:active, a:focus {
 @media screen and (max-width: 992px)
 {
 
-	.block-form--input-row {
+	.block-form__input-row {
 		margin: 0 5%;
 		float: left;
 		width: 90%;
 		height: auto;
 	}
 
-	.block-form--label {
+	.block-form__label {
 		width: 100%;
 		margin: 20px 0 10px;
 	}
 
-	.block-form--input {
+	.block-form__input {
 		width: 100%;
 		height: 60px;
 	}
 
-	.block-form--submit {
+	.block-form__submit {
 		margin: 20px 0 0;
 		padding: 20px;
 	}
@@ -244,12 +244,12 @@ a:hover, a:active, a:focus {
 @media screen and (max-width: 768px)
 {
 
-	.content--img {
+	.content__img {
 		margin: 0 15%;
 		width: 70%;
 	}
 
-	.block-empresas--img {
+	.block-empresas__img {
 		width: 50%;
 	}
 
@@ -258,7 +258,7 @@ a:hover, a:active, a:focus {
 	}
 
 
-	.footer--img {
+	.footer__img {
 		width: 30%;
 		margin-left: 0;
 	}
@@ -268,7 +268,7 @@ a:hover, a:active, a:focus {
 @media only screen and (max-width: 640px)
 {
 
-	.block-empresas--img {
+	.block-empresas__img {
 		width: 70%;
 	}
 
