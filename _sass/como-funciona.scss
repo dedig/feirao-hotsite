@@ -1,0 +1,28 @@
+.como-funciona {
+	background-color: $deepGreen;
+	padding: 100px 0;
+
+	&__col {
+		margin: 40px 0 20px;
+	}
+
+	&__img {
+		width: 50%;
+		margin-left: 25%;
+
+		@media screen and (max-width: 768px) {
+			width: 30%;
+			margin-left: 0;
+		}
+	}
+
+	&__text {
+		color: #fff;
+		text-align: center;
+	}
+
+	&__text--underlined {
+		padding-bottom: 10px;
+		border-bottom: 3px solid $green;
+	}
+}
