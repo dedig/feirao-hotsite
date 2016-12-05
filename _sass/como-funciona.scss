@@ -19,10 +19,14 @@
 	&__text {
 		color: #fff;
 		text-align: center;
-	}
 
-	&__text--underlined {
-		padding-bottom: 10px;
-		border-bottom: 3px solid $green;
+		&--underlined {
+			padding-bottom: 10px;
+			border-bottom: 3px solid $green;
+		}
+
+		&--left {
+			text-align: left;
+		}
 	}
 }

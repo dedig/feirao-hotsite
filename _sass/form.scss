@@ -1,7 +1,13 @@
-.block-form {
-	margin-top: 30px;
+#busca-dividida {
+	display: block;
+}
 
-	&__input-row {
+.block-form {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: none;
+
+	%row {
 		height: 70px;
 		margin: 10px 0;
 		padding-right: 0;
@@ -14,6 +20,10 @@
 		}
 	}
 
+	&__input-row {
+		@extend %row;
+	}
+
 	&__label {
 		width: 15%;
 		text-align: left;
@@ -23,7 +33,18 @@
 			width: 100%;
 			margin: 20px 0 10px;
 		}
+
+		&--checkbox {
+			padding: 0 20px;
+
+			input {
+				margin-right: 10px;
+				background-color: transparent;
+				border: none;
+			}
+		}
 	}
+
 
 	&__input {
 		width: 83%;
@@ -36,56 +57,86 @@
 			width: 100%;
 			height: 60px;
 		}
+
+		&:hover {
+			border-color: #009d00;
+		}
+
+		&:active, &:focus {
+			border-color: #00cf00;
+			outline: none;
+		}
+
+		&--date {
+			color: #aaa;
+
+			@media only screen and (max-width: 768px) {
+				width: 100% !important;
+				text-align: center !important;
+			}
+		}
+
+		&--date:focus {
+			color: #034;
+		}
 	}
 
-	&__input:hover {
-		border-color: #009d00;
-	}
-
-	&__input:active, &__input:focus {
-		border-color: #00cf00;
-		outline: none;
-	}
-
-	&__submit {
+	%button {
 		height: 100%;
+		float: right;
+		margin-right: 20px;
 		background-color: $green;
 		color: #fff;
 		padding: 5px 35px;
 		font-weight: bold;
-		margin-left: 15%;
 		border: none;
 		border-radius: 5px;
+		padding: 20px;
 
 		@media only screen and (max-width: 992px) {
-			margin: 20px 0 0;
-			padding: 20px;
+			margin: 20px auto 0 !important;
+			float: initial;
+			text-align: center !important;
+		}
+
+		&:hover {
+			background-color: #004800;
+		}
+
+		&:active {
+			background-color: #002600;
+		}
+
+		&:focus {
+			outline: none;
 		}
 	}
 
-	&__submit:hover {
-		background-color: #004800;
-	}
+	&__submit {
+		@extend %button;
 
-	&__submit:active {
-		background-color: #002600;
-	}
+		&--center {
+			text-align: center;
 
-	&__submit:focus {
-		outline: none;
-	}
-
-	&__submit--center {
-		text-align: center;
-
-		@media only screen and (min-width: 993px) {
-			width: 25%;
-			margin-left: 37.5%;
-			margin-right: 37.5%;
+			@media only screen and (min-width: 993px) {
+				width: 25% !important;
+				margin-left: 37.5% !important;
+				margin-right: 37.5% !important;
+			}
 		}
-	}
 
-	&__submit--procurar {
-		margin-left: 0;
+		&--left {
+			text-align: left;
+			float: initial !important;
+		}
+
+		&--procurar {
+			margin-left: 0 !important;
+			float: initial !important;
+		}
+
+		&--img {
+			width: 30px;
+		}
 	}
 }

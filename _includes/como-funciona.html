@@ -18,10 +18,14 @@
 					<h3 class="como-funciona__text">Após fechar seu acordo, gere o boleto e limpe o seu nome!</h3>
 				</div>
 			</div>
-
-			{% include partials/busca-dividida.html %}
-			{% include partials/cadastre-se.html %}
-			{% include partials/sms.html %}
-			{% include partials/sem-contratos.html %}
+			<div id="transition">
+				{% include partials/forms/busca-dividida.html %}
+				{% include partials/forms/cadastre-se.html %}
+				{% include partials/forms/sms.html %}
+				{% include partials/forms/visualizar-propostas.html %}
+				{% include partials/forms/sem-contratos.html %}
+				{% include partials/forms/sucesso.html %}
+			</div>
 	</div>
 </section>
+<script type="text/javascript" src="js/transition.js"></script>
