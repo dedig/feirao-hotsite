@@ -10,8 +10,10 @@
     }
     p, a p {
         font-size: 1.7rem;
+        font-weight: normal;
+        color: $green;
     }
     .r {
-        color: red;
+        color: $lightGreen;
     }
 }
