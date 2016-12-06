@@ -1,0 +1,142 @@
+#busca-dividida {
+	display: block;
+}
+
+.block-form {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: none;
+
+	%row {
+		height: 70px;
+		margin: 10px 0;
+		padding-right: 0;
+
+		@media only screen and (max-width: 992px) {
+			margin: 0 5%;
+			float: left;
+			width: 90%;
+			height: auto;
+		}
+	}
+
+	&__input-row {
+		@extend %row;
+	}
+
+	&__label {
+		width: 15%;
+		text-align: left;
+		color: #fff;
+
+		@media only screen and (max-width: 992px) {
+			width: 100%;
+			margin: 20px 0 10px;
+		}
+
+		&--checkbox {
+			padding: 0 20px;
+
+			input {
+				margin-right: 10px;
+				background-color: transparent;
+				border: none;
+			}
+		}
+	}
+
+
+	&__input {
+		width: 83%;
+		height: 100%;
+		padding: 15px 2%;
+		border: 2px solid $green;
+		border-radius: 5px;
+
+		@media only screen and (max-width: 992px) {
+			width: 100%;
+			height: 60px;
+		}
+
+		&:hover {
+			border-color: #009d00;
+		}
+
+		&:active, &:focus {
+			border-color: #00cf00;
+			outline: none;
+		}
+
+		&--date {
+			color: #aaa;
+
+			@media only screen and (max-width: 768px) {
+				width: 100% !important;
+				text-align: center !important;
+			}
+		}
+
+		&--date:focus {
+			color: #034;
+		}
+	}
+
+	%button {
+		height: 100%;
+		float: right;
+		margin-right: 20px;
+		background-color: $green;
+		color: #fff;
+		padding: 5px 35px;
+		font-weight: bold;
+		border: none;
+		border-radius: 5px;
+		padding: 20px;
+
+		@media only screen and (max-width: 992px) {
+			margin: 20px auto 0 !important;
+			float: initial;
+			text-align: center !important;
+		}
+
+		&:hover {
+			background-color: #004800;
+		}
+
+		&:active {
+			background-color: #002600;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__submit {
+		@extend %button;
+
+		&--center {
+			text-align: center;
+
+			@media only screen and (min-width: 993px) {
+				width: 25% !important;
+				margin-left: 37.5% !important;
+				margin-right: 37.5% !important;
+			}
+		}
+
+		&--left {
+			text-align: left;
+			float: initial !important;
+		}
+
+		&--procurar {
+			margin-left: 0 !important;
+			float: initial !important;
+		}
+
+		&--img {
+			width: 30px;
+		}
+	}
+}

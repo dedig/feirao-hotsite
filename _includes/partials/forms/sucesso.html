@@ -1,0 +1,75 @@
+<div class="block-form" id="sucesso">
+	<h1 class="como-funciona__text como-funciona__text--underlined">Parabéns! Negociação realizada com sucesso!</h1>
+	<h2 class="como-funciona__text">Para imprimir seu boleto, confirme e complete seus dados cadastrais</h2>
+	<form class="row">
+		<div class="col-sm-6">
+			<div class="block-form__input-row">
+				<label class="block-form__label">Nome:</label>
+				<input class="block-form__input" type="text" placeholder="Seu nome">
+			</div>
+			<div class="block-form__input-row">
+				<label class="block-form__label">CPF:</label>
+				<input class="block-form__input" type="text" placeholder="Seu CPF">
+			</div>
+			<div class="block-form__input-row">
+				<label class="block-form__label">E-mail:</label>
+				<input class="block-form__input" type="text" placeholder="Seu E-mail">
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="block-form__input-row">
+				<label class="block-form__label">Data de nascimento:</label>
+				<input class="block-form__input block-form__input--date" type="date" placeholder="dd/mm/aaaa">
+			</div>
+			<div class="block-form__input-row">
+				<label class="block-form__label">Telefone celular:</label>
+				<input class="block-form__input" type="text" placeholder="(00) 0000-0000">
+			</div>
+			<div class="block-form__input-row">
+				<label class="block-form__label">Telefone residencial:</label>
+				<input class="block-form__input" type="text" placeholder="(00) 0000-0000">
+			</div>
+		</div>
+	</form>
+	<h3 class="como-funciona__text como-funciona__text--left">Proposta escolhida:</h3>
+	<div class="pre-scrollable">
+		<table class="block-table">
+			<tr class="block-table__row">
+				<th>Contratos</th>
+				<th>Data do contrato</th>
+				<th>Nº de parcelas de contrato</th>
+				<th>Valor atualizado</th>
+				<th>Valor de desconto</th>
+				<th>Local de compra</th>
+			</tr>
+			<tr class="block-table__row">
+				<td>00383FF</td>
+				<td>10/02/2015</td>
+				<td>18</td>
+				<td>R$ 3.450,23</td>
+				<td>R$ 2.220,43</td>
+				<td>Loja nº 01</td>
+			</tr>
+			<tr class="block-table__row">
+				<th>Propostas</th>
+				<td>Á VISTA</td>
+				<td>R$ 400,00</td>
+				<td>25/12/2016</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<h3 class="como-funciona__text como-funciona__text--left">Escolha como deseja receber seu boleto:</h3>
+	<div class="row block-form__input-row">
+		<div class="col-sm-6">
+			<button type="button" class="block-form__submit block-form__submit--left"><img class="block-form__submit--img" src="img/print.svg"></button>
+			<button type="button" class="block-form__submit block-form__submit--left"><img class="block-form__submit--img" src="img/sms.svg"></button>
+			<button type="button" class="block-form__submit block-form__submit--left"><img class="block-form__submit--img" src="img/email.svg"></button>
+		</div>
+		<div class="col-sm-6">
+			<button type="button" class="block-form__submit" id="sucesso-submit">Negociar outros contratos</button>
+		</div>
+	</div>
+</div>
