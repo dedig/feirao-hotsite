@@ -254,8 +254,10 @@ a:hover, a:active, a:focus {
     font-weight: 700;
     font-size: 2.5rem; }
   #duvidas-frequentes p, #duvidas-frequentes a p {
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: #006a00; }
   #duvidas-frequentes .r {
-    color: red; }
+    color: #4fb886; }
 
 /*# sourceMappingURL=main.css.map */
