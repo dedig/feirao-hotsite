@@ -1,45 +1,263 @@
-/*
-Error: Invalid CSS after "...ort "variables"": expected "{", was ";"
-        on line 16 of main.scss
+h1, h2, h3, p, input, button, label, a, td, th {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.5; }
 
-11: 
-12: *\/
-13: ---
-14: ---
-15: 
-16: @import "variables";
-17: @import "fonts";
-18: @import "livehelper";
-19: @import "header";
-20: @import "intro";
-21: @import "como-funciona";
+h1, a {
+  color: #006a00; }
 
-Backtrace:
-main.scss:16
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ort \"variables\"\": expected \"{\", was \";\"\A         on line 16 of main.scss\A \A 11: \A 12: */\A 13: ---\A 14: ---\A 15: \A 16: @import \"variables\";\A 17: @import \"fonts\";\A 18: @import \"livehelper\";\A 19: @import \"header\";\A 20: @import \"intro\";\A 21: @import \"como-funciona\";"; }
+h1 {
+  font-size: 2.2em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center; }
+
+h2, h3, input, button, label {
+  color: #003344; }
+
+h2 {
+  font-size: 1.8em; }
+
+h3 {
+  font-size: 1.5em; }
+
+p, input, button, label, a {
+  font-size: 1em; }
+
+a {
+  font-weight: bold; }
+
+a:hover, a:active, a:focus {
+  text-decoration: none; }
+
+@media only screen and (max-width: 768px) {
+  * {
+    text-align: center; } }
+@media only screen and (max-width: 640px) {
+  #lhc_status_container {
+    margin-bottom: 0 !important; } }
+
+.header {
+  position: absolute;
+  width: 100%;
+  float: right;
+  padding: 10px; }
+  .header__button {
+    background-color: transparent;
+    color: #1A4757;
+    border: none;
+    width: 100%;
+    margin: 0 10px 10px 0;
+    font-weight: bold;
+    display: block;
+    text-align: right; }
+    @media only screen and (max-width: 1200px) {
+      .header__button {
+        text-align: center;
+        width: 30%;
+        float: left; } }
+  .header__button:hover {
+    color: #5E8B9B;
+    border-color: #5E8B9B; }
+  .header__button:focus {
+    outline: none; }
+  @media only screen and (max-width: 1200px) {
+    .header {
+      position: static;
+      width: 100%; } }
+
+@media only screen and (max-width: 1200px) {
+  .hidden-1200 {
+    display: none; } }
+
+.intro {
+  padding: 30px 0;
+  background: #eeffee;
+  background: -moz-linear-gradient(top, #eeffee 0%, white 99%);
+  background: -webkit-linear-gradient(top, #eeffee 0%, white 99%);
+  background: linear-gradient(to bottom, #eeffee 0%, white 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeffee', endColorstr='#ffffff',GradientType=0 ); }
+  .intro__img {
+    padding: 20px;
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      .intro__img {
+        margin: 0 15%;
+        width: 70%; } }
+  .intro__link {
+    margin: 20px 0;
+    text-align: center; }
+
+.block-main-text {
+  margin: 50px 0;
+  text-align: center; }
+
+.block-empresas {
+  padding: 25px 0;
+  background-color: #dee; }
+  .block-empresas__img {
+    margin: 20px 0;
+    width: 60%; }
+    @media only screen and (max-width: 768px) {
+      .block-empresas__img {
+        width: 50%; } }
+    @media only screen and (max-width: 640px) {
+      .block-empresas__img {
+        width: 70%; } }
+
+.como-funciona {
+  background-color: #1A4757;
+  padding: 100px 0; }
+  .como-funciona__col {
+    margin: 40px 0 20px; }
+  .como-funciona__img {
+    width: 50%;
+    margin-left: 25%; }
+    @media screen and (max-width: 768px) {
+      .como-funciona__img {
+        width: 30%;
+        margin-left: 0; } }
+  .como-funciona__text {
+    color: #fff;
+    text-align: center; }
+    .como-funciona__text--underlined {
+      padding-bottom: 10px;
+      border-bottom: 3px solid #006a00; }
+    .como-funciona__text--left {
+      text-align: left; }
+
+#busca-dividida {
+  display: block; }
+
+.block-form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: none; }
+  .block-form .block-form__input-row, .block-form .block-table__row {
+    height: 70px;
+    margin: 10px 0;
+    padding-right: 0; }
+    @media only screen and (max-width: 992px) {
+      .block-form .block-form__input-row, .block-form .block-table__row {
+        margin: 0 5%;
+        float: left;
+        width: 90%;
+        height: auto; } }
+  .block-form__label {
+    width: 15%;
+    text-align: left;
+    color: #fff; }
+    @media only screen and (max-width: 992px) {
+      .block-form__label {
+        width: 100%;
+        margin: 20px 0 10px; } }
+    .block-form__label--checkbox {
+      padding: 0 20px; }
+      .block-form__label--checkbox input {
+        margin-right: 10px;
+        background-color: transparent;
+        border: none; }
+  .block-form__input {
+    width: 83%;
+    height: 100%;
+    padding: 15px 2%;
+    border: 2px solid #006a00;
+    border-radius: 5px; }
+    @media only screen and (max-width: 992px) {
+      .block-form__input {
+        width: 100%;
+        height: 60px; } }
+    .block-form__input:hover {
+      border-color: #009d00; }
+    .block-form__input:active, .block-form__input:focus {
+      border-color: #00cf00;
+      outline: none; }
+    .block-form__input--date {
+      color: #aaa; }
+      @media only screen and (max-width: 768px) {
+        .block-form__input--date {
+          width: 100% !important;
+          text-align: center !important; } }
+    .block-form__input--date:focus {
+      color: #034; }
+  .block-form .block-form__submit, .block-form .block-table__button {
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+    background-color: #006a00;
+    color: #fff;
+    padding: 5px 35px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 20px; }
+    @media only screen and (max-width: 992px) {
+      .block-form .block-form__submit, .block-form .block-table__button {
+        margin: 20px auto 0 !important;
+        float: initial;
+        text-align: center !important; } }
+    .block-form .block-form__submit:hover, .block-form .block-table__button:hover {
+      background-color: #004800; }
+    .block-form .block-form__submit:active, .block-form .block-table__button:active {
+      background-color: #002600; }
+    .block-form .block-form__submit:focus, .block-form .block-table__button:focus {
+      outline: none; }
+  .block-form__submit--center {
+    text-align: center; }
+    @media only screen and (min-width: 993px) {
+      .block-form__submit--center {
+        width: 25% !important;
+        margin-left: 37.5% !important;
+        margin-right: 37.5% !important; } }
+  .block-form__submit--left {
+    text-align: left;
+    float: initial !important; }
+  .block-form__submit--procurar {
+    margin-left: 0 !important;
+    float: initial !important; }
+  .block-form__submit--img {
+    width: 30px; }
+
+.pre-scrollable {
+  height: auto;
+  width: 100%;
+  max-height: 100%;
+  margin-bottom: 20px; }
+
+.block-table {
+  width: 1120px;
+  height: 100%;
+  float: left; }
+  .block-table__row {
+    width: 100%;
+    margin: 0 !important; }
+    .block-table__row td, .block-table__row th {
+      width: 11.11111%;
+      height: 100%;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      background-color: #cecdcc;
+      background-color: rgba(0, 0, 0, 0.2);
+      border: solid 2px #1A4757; }
+  .block-table__button {
+    height: auto !important;
+    max-height: 80px !important;
+    padding: 7px !important;
+    margin: 0 !important; }
+
+#duvidas-frequentes {
+  padding: 50px; }
+  #duvidas-frequentes h2 {
+    text-align: center;
+    font-size: 4rem; }
+  #duvidas-frequentes h3 {
+    font-weight: 700;
+    font-size: 2.5rem; }
+  #duvidas-frequentes p, #duvidas-frequentes a p {
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: #006a00; }
+  #duvidas-frequentes .r {
+    color: #4fb886; }
+
+/*# sourceMappingURL=main.css.map */
