@@ -1,0 +1,23 @@
+---
+layout: main
+---
+
+{% include header.html %}
+
+<section class="steps">
+	<div class="container">
+		<div class="col-sm-2">
+			<img class="steps__img" src="img/feirao-logo.png">
+		</div>
+		<div class="col-sm-2 steps__activated"></div>
+		<div class="col-sm-2 steps__next"></div>
+	</div>
+</section>
+
+<div class="container">
+	{% include partials/forms/cadastre-se.html %}
+	{% include partials/forms/sms.html %}
+	{% include partials/forms/visualizar-propostas.html %}
+	{% include partials/forms/sem-contratos.html %}
+	{% include partials/forms/sucesso.html %}
+</div>

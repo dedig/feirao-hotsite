@@ -1,0 +1,22 @@
+<header class="header">
+	<div class="container">
+		{% if include.type == "home" %}
+			<a href="#como-funciona">
+				<button class="header__button col-sm-4">Como funciona</button>
+			</a>
+			<a href="#duvidas-frequentes">
+				<button class="header__button col-sm-4">Perguntas frequentes</button>
+			</a>
+			<a href="#">
+				<button class="header__button col-sm-4">2º via de boleto</button>
+			</a>
+		{% else %}
+			<a href="/index">
+				<button class="header__button col-sm-3 col-sm-offset-6">Início</button>
+			</a>
+			<a href="#">
+				<button class="header__button col-sm-3">2º via de boleto</button>
+			</a>
+		{% endif %}
+	</div>
+</header>

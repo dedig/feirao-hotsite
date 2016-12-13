@@ -17,8 +17,7 @@ h2 {
   font-size: 1.8em; }
 
 h3 {
-  font-size: 1.1em;
-  font-weight: 500; }
+  font-size: 1.5em; }
 
 p, input, button, label, a {
   font-size: 1em; }
@@ -29,12 +28,9 @@ a {
 a:hover, a:active, a:focus {
   text-decoration: none; }
 
-/*
-@media only screen and (max-width: 767px) {
-	* {
-		text-align: center;
-	}
-}*/
+@media only screen and (max-width: 768px) {
+  * {
+    text-align: center; } }
 @media only screen and (max-width: 640px) {
   #lhc_status_container {
     margin-bottom: 0 !important; } }
@@ -49,11 +45,13 @@ a:hover, a:active, a:focus {
     border: none;
     color: #fff;
     font-weight: bold;
-    text-align: center; }
-    @media only screen and (max-width: 767px) {
-      .header__button {
-        text-align: center;
-        width: 100%; } }
+    text-align: center;
+    /*
+    @media only screen and (max-width: 1200px) {
+    	text-align: center;
+    	width: 30%;
+    	float: left;
+    }*/ }
   .header__button:hover {
     color: #5E8B9B;
     border-color: #5E8B9B; }
@@ -68,24 +66,23 @@ a:hover, a:active, a:focus {
   .hidden-1200 {
     display: none; } }
 
-.intro, .steps {
+.intro {
   padding: 30px 0;
   background: #eeffee;
   background: -moz-linear-gradient(top, #eeffee 0%, white 99%);
   background: -webkit-linear-gradient(top, #eeffee 0%, white 99%);
   background: linear-gradient(to bottom, #eeffee 0%, white 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeffee', endColorstr='#ffffff',GradientType=0 ); }
-
-.intro__img {
-  padding: 20px;
-  width: 80%; }
-  @media screen and (max-width: 767px) {
-    .intro__img {
-      margin: 0 15%;
-      width: 70%; } }
-.intro__link {
-  margin: 20px 0;
-  text-align: center; }
+  .intro__img {
+    padding: 20px;
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      .intro__img {
+        margin: 0 15%;
+        width: 70%; } }
+  .intro__link {
+    margin: 20px 0;
+    text-align: center; }
 
 .block-main-text {
   margin: 50px 0;
@@ -93,25 +90,19 @@ a:hover, a:active, a:focus {
   .block-main-text__title {
     padding-bottom: 15px;
     border-bottom: solid 2px #4d4d4d; }
-  .block-main-text__content {
-    text-align: left; }
-    .block-main-text__content img, .block-main-text__content h3 {
-      padding-top: 10px;
-      margin: 0; }
 
 .block-empresas {
-  text-align: center;
-  height: 100px; }
+  text-align: center; }
   .block-empresas__img {
-    width: 60%;
-    margin: 15px 20%; }
-    @media only screen and (max-width: 1200px) {
-      .block-empresas__img {
-        width: 100%;
-        margin: 15px 0; } }
-
-.block-contatos__img {
-  padding: 10px; }
+    width: 100%;
+    		/*
+    		@media only screen and (max-width: 768px) {
+    			width: 50%;
+    		}
+    
+    		@media only screen and (max-width: 640px) {
+    			width: 70%;
+    		}*/ }
 
 .como-funciona {
   background-color: #1A4757;
@@ -124,7 +115,7 @@ a:hover, a:active, a:focus {
     @media screen and (max-width: 768px) {
       .como-funciona__img {
         width: 30%;
-        margin-left: 35%; } }
+        margin-left: 0; } }
   .como-funciona__text {
     color: #fff;
     text-align: center; }
@@ -138,10 +129,9 @@ a:hover, a:active, a:focus {
   display: block; }
 
 .block-form {
-  margin-top: 25px;
-  margin-bottom: 25px; }
-  .block-form h2 {
-    text-align: center; }
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: none; }
   .block-form .block-form__input-row, .block-form .block-table__row {
     height: 70px;
     margin: 10px 0;
@@ -155,7 +145,7 @@ a:hover, a:active, a:focus {
   .block-form__label {
     width: 15%;
     text-align: left;
-    color: #1A4757; }
+    color: #fff; }
     @media only screen and (max-width: 992px) {
       .block-form__label {
         width: 100%;
@@ -167,8 +157,7 @@ a:hover, a:active, a:focus {
         background-color: transparent;
         border: none; }
   .block-form__input {
-    width: 100%;
-    text-align: center;
+    width: 83%;
     height: 100%;
     padding: 15px 2%;
     border: 2px solid #006a00;
@@ -176,8 +165,7 @@ a:hover, a:active, a:focus {
     @media only screen and (max-width: 992px) {
       .block-form__input {
         width: 100%;
-        height: 60px;
-        margin-bottom: 15px; } }
+        height: 60px; } }
     .block-form__input:hover {
       border-color: #009d00; }
     .block-form__input:active, .block-form__input:focus {
@@ -187,14 +175,14 @@ a:hover, a:active, a:focus {
       color: #aaa; }
       @media only screen and (max-width: 768px) {
         .block-form__input--date {
-          width: 100% !important; } }
+          width: 100% !important;
+          text-align: center !important; } }
     .block-form__input--date:focus {
       color: #034; }
-  .block-form__input--w-label {
-    width: 83%; }
   .block-form .block-form__submit, .block-form .block-table__button {
     height: 100%;
     float: right;
+    margin-right: 20px;
     background-color: #006a00;
     color: #fff;
     padding: 5px 35px;
@@ -206,7 +194,6 @@ a:hover, a:active, a:focus {
       .block-form .block-form__submit, .block-form .block-table__button {
         margin: 20px auto 0 !important;
         float: initial;
-        text-align: center;
         text-align: center !important; } }
     .block-form .block-form__submit:hover, .block-form .block-table__button:hover {
       background-color: #004800; }
@@ -229,8 +216,6 @@ a:hover, a:active, a:focus {
     float: initial !important; }
   .block-form__submit--img {
     width: 30px; }
-  .block-form__submit--w-label {
-    margin-right: 20px; }
 
 .pre-scrollable {
   height: auto;
@@ -251,23 +236,14 @@ a:hover, a:active, a:focus {
       padding: 20px;
       color: #fff;
       text-align: center;
+      background-color: #cecdcc;
       background-color: rgba(0, 0, 0, 0.2);
-      border: solid 2px #fff;
-      color: #1A4757; }
-    .block-table__row td {
-      background-color: #cecdcc; }
-    .block-table__row th {
-      background-color: #acabaa; }
+      border: solid 2px #1A4757; }
   .block-table__button {
     height: auto !important;
     max-height: 80px !important;
     padding: 7px !important;
-    margin: 0 !important;
-    background-color: #666 !important; }
-  .block-table__button:hover {
-    background-color: #444 !important; }
-  .block-table__button:active, .block-table__button:focus {
-    background-color: #999 !important; }
+    margin: 0 !important; }
 
 #duvidas-frequentes {
   padding: 50px; }
@@ -284,19 +260,6 @@ a:hover, a:active, a:focus {
   #duvidas-frequentes .r {
     color: #4fb886; }
 
-.steps {
-  border-bottom: solid 3px #006a00; }
-  .steps__img {
-    width: 100%;
-    margin-top: 20px;
-    padding: 0; }
-    @media only screen and (max-width: 767px) {
-      .steps__img {
-        width: 50%;
-        margin-left: 25%; } }
-  .steps__activated::before {
-    border: solid 1px red; }
-
 /*
 ---
 ---
@@ -306,12 +269,10 @@ a:hover, a:active, a:focus {
 @import "livehelper";
 @import "header";
 @import "intro";
-@import "contatos";
 @import "como-funciona";
 @import "form";
 @import "table";
 @import "duvidas-frequentes";
-@import "steps";
 */
 
 /*# sourceMappingURL=main.css.map */
