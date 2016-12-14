@@ -1,0 +1,113 @@
+.header-segunda-pagina {
+	@extend %gradient;
+	border-bottom: solid 3px $green;
+
+	&__img {
+		width: 100%;
+		margin-top: 20px;
+		padding: 0;
+
+		@media only screen and (max-width: 767px) {
+			width: 50%;
+			margin-left: 25%;
+		}
+	}
+
+	.step {
+		padding: 0;
+		margin: 50px 0;
+		width: 20%;
+		float: left;
+
+		.number {
+			border-radius: 50%;
+			width: 50%;
+			font-weight: bold;
+			font-size: 2em;
+			float: left;
+			margin: 0;
+			padding: 24px 21%;
+
+			@media only screen and (max-width: 1199px) {
+				padding: 18px 20%;
+			}
+
+			@media only screen and (max-width: 991px) {
+				padding: 7px 19%;
+			}
+
+			@media only screen and (max-width: 767px) {
+				padding: 0 12px;// 19%;
+				width: auto;
+				margin: 0;
+			}
+		}
+
+		.line {
+			width: 50%;
+			height: 6px;
+			float: left;
+			margin: 40px 0 0;
+
+			@media only screen and (max-width: 1199px) {
+				margin-top: 37px;
+			}
+
+			@media only screen and (max-width: 991px) {
+				margin-top: 24px;
+			}
+
+			@media only screen and (max-width: 767px) {
+				display: none;
+				//margin-top: 30px;
+			}
+		}
+
+		& .number, & .line {
+			background-color: #c1c1c1;
+			color: #888;
+		}
+
+		&--first {
+			width: 10%;
+			margin-left: 5%;
+
+			@media only screen and (max-width: 767px) {
+				width: 20%;
+				margin-left: 0;
+			}
+
+			& .number {
+				width: 100%;
+				padding-left: 35px;
+
+				@media only screen and (max-width: 1199px) {
+					padding-left: 30px;
+				}
+
+				@media only screen and (max-width: 991px) {
+					padding-left: 20px;
+				}
+
+				@media only screen and (max-width: 767px) {
+					//padding-left: 25px;
+					padding: 0 12px;// 19%;
+					width: auto;
+					margin: 0;
+				}
+			}
+
+			& .line {
+				width: 0;
+				height: 0;
+			}
+		}
+
+		&--activated {
+			& .number, & .line {
+				background-color: #1A4757;
+				color: #fff;
+			}
+		}
+	}
+}

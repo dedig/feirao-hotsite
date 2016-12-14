@@ -21,9 +21,17 @@
 			padding: 20px;
 			color: #fff;
 			text-align: center;
-			background-color: #cecdcc;
 			background-color: rgba(0,0,0,0.2);
-			border: solid 2px #1A4757;
+			border: solid 2px #fff;
+			color: #1A4757;
+		}
+
+		td {
+			background-color: #cecdcc;
+		}
+
+		th {
+			background-color: #acabaa;
 		}
 	}
 
@@ -33,5 +41,18 @@
 		max-height: 80px !important;
 		padding: 7px !important;
 		margin: 0 !important;
+		background-color: #666 !important;
+	}
+
+	&__button:hover {
+		background-color: #444 !important;
+	}
+
+	&__button:active {
+		background-color: #999 !important;
+	}
+
+	&__button:focus {
+		background-color: #777 !important;
 	}
 }

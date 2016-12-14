@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Feirão Limpe seu Nome</title>
+
+<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous">
+	</script>
+
+<link
+	rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<link
+	rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	crossorigin="anonymous">
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous">
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+
+<script type="text/javascript">
+var LHCChatOptions = {};
+LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500,domain:'feiraolimpeseunome.com.br'};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
+var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+po.src = '//otrs.dedig.com.br/rovereti-chat/lhc_web/index.php/por/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true/(department)/1/(disable_pro_active)/true/(theme)/2?r='+referrer+'&l='+location;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+</head>
+<body>
+    	<header class="header">
+	<div class="container">
+		<a href="#como-funciona">
+			<button class="header__button col-sm-4">Como funciona</button>
+		</a>
+		<a href="#duvidas-frequentes">
+			<button class="header__button col-sm-4">Perguntas frequentes</button>
+		</a>
+		<a href="#">
+			<button class="header__button col-sm-4">2º via de boleto</button>
+		</a>
+	</div>
+</header>
+
+	<section class="intro">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-4">
+					<img class="intro__img" src="img/feirao-logo.png">
+				</div>
+
+				<div class="col-sm-8">
+
+					<section class="block-empresas">
+	<h3>Empresas participantes:</h3>
+	<div class="col-sm-3 col-xs-6">
+		<img class="block-empresas__img" src="img/logo-parceiros-1.png">
+	</div>
+	<div class="col-sm-3 col-xs-6">
+		<img class="block-empresas__img" src="img/logo-parceiros-2.png">
+	</div>
+	<div class="col-sm-3 col-xs-6">
+		<img class="block-empresas__img" src="img/logo-parceiros-3.png">
+	</div>
+	<!-- div class="col-sm-3 col-xs-6">
+		<img class="block-empresas__img" src="img/logo-parceiros-4.png">
+	</div -->
+</section>
+
+					<div class="block-main-text">
+						<h1 class="block-main-text__title">Quite sua dívida com condições imperdíveis!</h1>
+						<h2>Não perca a oportunidade de quitar sua dívida com descontos de 100% nos juros e até 40% no valor principal.</h2>
+						<hr>
+						<h3>Nosso serviço é completamente <strong>gratuito</strong> para você!<br>Não cobramos nenhum tipo de taxa.</h3>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<form class="block-form" id="busca-dividida">
+	<div class="block-form__input-row">
+		<label class="block-form__label">Nome:</label>
+		<input class="block-form__input" type="text" placeholder="Nome">
+	</div>
+	<div class="block-form__input-row">
+		<label class="block-form__label">CPF:</label>
+		<input class="block-form__input" type="text" placeholder="CPF">
+	</div>
+	<div class="block-form__input-row">
+		<label class="block-form__label">Data de nascimento:</label>
+		<input class="block-form__input block-form__input--date" type="date" placeholder="DD/MM/AAAA">
+	</div>
+	<div class="block-form__input-row">
+		<label class="block-form__label">Telefone celular:</label>
+		<input class="block-form__input" type="tel" placeholder="(00) 0000-0000">
+	</div>
+	<div class="block-form__input-row">
+		<button type="button" class="block-form__submit" id="busca-dividida-submit">Buscar dívida</button>
+	</div>
+</form>
+				<div class="block-form" id="cadastre-se">
+	<h1 class="como-funciona__text como-funciona__text--underlined">Você ainda não possui cadastro em nosso portal!</h1>
+	<h2 class="como-funciona__text">Confirme seus dados abaixo e cadastre-se já:</h2>
+	<form>
+		<div class="block-form__input-row">
+			<label class="block-form__label">Nome:</label>
+			<input class="block-form__input" type="text" placeholder="Seu nome">
+		</div>
+		<div class="block-form__input-row">
+			<label class="block-form__label">CPF:</label>
+			<input class="block-form__input" type="text" placeholder="CPF">
+		</div>
+		<div class="block-form__input-row">
+			<label class="block-form__label">Data de Nascimento:</label>
+			<input class="block-form__input block-form__input--date" type="date" placeholder="DD/MM/AAAA">
+		</div>
+		<div class="block-form__input-row">
+			<label class="block-form__label">Telefone Celular:</label>
+			<input class="block-form__input" type="tel" placeholder="(00) 0000-0000">
+		</div>
+		<div class="block-form__input-row">
+			<button type="button" class="block-form__submit" id="cadastre-se-submit">Cadastrar</button>
+		</div>
+	</form>
+</div>
+				<div class="block-form" id="sms">
+	<h1 class="como-funciona__text como-funciona__text--underlined">Foi enviado um SMS com a senha do seu cadastro para o seu celular!</h1>
+	<h2 class="como-funciona__text">Já possui a senha? Acesse já as suas propostas!</h2>
+	<div class="block-form__input-row">
+		<button type="button" class="block-form__submit block-form__submit--center" id="sms-submit">Acessar propostas</button>
+	</div>
+</div>
+				<div class="block-form" id="visualizar-propostas">
+	<h1 class="como-funciona__text como-funciona__text--underlined">Selecione o credor que deseja visualizar suas propostas:</h1>
+	<h2 class="como-funciona__text">Obs.: Você deve escolher um único credor por vez</h2>
+	<div class="col-sm-4">
+		<h3 class="como-funciona__text">Nome: <span>Fulano da Silva Ferreira</span></h3>
+	</div>
+	<div class="col-sm-4">
+		<h3 class="como-funciona__text">Data de Nascimento: <span>12/08/1980</span></h3>
+	</div>
+	<div class="col-sm-4">
+		<h3 class="como-funciona__text">CPF: <span>000.000.000-00</span></h3>
+	</div>
+	<div class="pre-scrollable">
+		<table class="block-table">
+			<tr class="block-table__row">
+				<th></th>
+				<th>Credor</th>
+				<th>Contratos</th>
+				<th>Data do contrato</th>
+				<th>Nº de parcelas de contrato</th>
+				<th>Valor atualizado</th>
+				<th>Valor de desconto</th>
+				<th>Local de compra</th>
+				<th></th>
+			</tr>
+			<tr class="block-table__row">
+				<td><button type="button" class="block-table__button">Mostrar propostas</button></td>
+				<td>AGORACRED</td>
+				<td>00383FF</td>
+				<td>10/02/2015</td>
+				<td>18</td>
+				<td>R$ 3.450,23</td>
+				<td>R$ 2.220,43</td>
+				<td>Loja nº 01</td>
+				<td><button type="button" class="block-table__button">Status: -</button></td>
+			</tr>
+			<tr class="block-table__row">
+				<td><button type="button" class="block-table__button">Mostrar propostas</button></td>
+				<td>AGORACRED</td>
+				<td>00383FF</td>
+				<td>10/02/2015</td>
+				<td>18</td>
+				<td>R$ 3.450,23</td>
+				<td>R$ 2.220,43</td>
+				<td>Loja nº 01</td>
+				<td><button type="button" class="block-table__button">Status: -</button></td>
+			</tr>
+		</table>
+	</div>
+	<div class="block-form__row">
+		<button type="button" class="block-form__submit block-form__submit--center" id="visualizar-propostas-submit">Concluir negociação</button>
+	</div>
+</div>
+				<div class="sem-contratos block-form" id="sem-contratos">
+	<h1 class="como-funciona__text como-funciona__text--underlined">Não encontramos nenhum contrato que atenda os critérios da campanha desse feirão.</h1>
+	<h2 class="como-funciona__text">Informe abaixo para qual credor você possui dívidas que iremos solicitar mais informações para você.</h2>
+	<form>
+		<div class="block-form__input-row">
+			<label class="block-form__label">Nome:</label>
+			<input class="block-form__input" type="text" placeholder="Nome">
+		</div>
+
+		<div class="block-form__input-row">
+			<label class="block-form__label">CPF:</label>
+			<input class="block-form__input" type="text" placeholder="CPF">
+		</div>
+
+		<div class="block-form__input-row">
+			<label class="block-form__label">E-mail:</label>
+			<input class="block-form__input" type="email" placeholder="E-mail">
+		</div>
+
+		<div class="block-form__input-row">
+			<label class="block-form__label">Data de Nascimento:</label>
+			<input class="block-form__input block-form__input--date" type="date" placeholder="DD/MM/AAAA">
+		</div>
+
+		<div class="block-form__input-row">
+			<label class="block-form__label">Telefone Celular:</label>
+			<input class="block-form__input" type="tel" placeholder="(00) 0000-0000">
+		</div>
+
+		<div class="block-form__input-row">
+			<label class="block-form__label">Credores:</label>
+			<button type="button" class="block-form__submit block-form__submit--procurar">Procurar</button>
+		</div>
+
+		<div class="block-form__input-row">
+			<label class="block-form__label">Como você deseja receber nosso contato?</label>
+			<label class="block-form__label block-form__label--checkbox"><input type="checkbox" value="">Whatsapp</label>
+			<label class="block-form__label block-form__label--checkbox"><input type="checkbox" value="">SMS</label>
+			<label class="block-form__label block-form__label--checkbox"><input type="checkbox" value="">E-mail</label>
+			<label class="block-form__label block-form__label--checkbox"><input type="checkbox" value="">Telefone</label>
+		</div>
+
+		<div class="block-form__input-row">
+			<label class="block-form__label">Mensagem:</label>
+			<textarea rows="3" cols="130" placeholder="Mensagem" class="block-form__input"></textarea>
+		</div>
+
+		<div class="block-form__input-row">
+			<button type="button" class="block-form__submit" id="sem-contratos-submit">Enviar mensagem</button>
+		</div>
+	</form>
+</div>
+				<div class="block-form" id="sucesso">
+	<h1 class="como-funciona__text como-funciona__text--underlined">Parabéns! Negociação realizada com sucesso!</h1>
+	<h2 class="como-funciona__text">Para imprimir seu boleto, confirme e complete seus dados cadastrais</h2>
+	<form class="row">
+		<div class="col-sm-6">
+			<div class="block-form__input-row">
+				<label class="block-form__label">Nome:</label>
+				<input class="block-form__input" type="text" placeholder="Seu nome">
+			</div>
+			<div class="block-form__input-row">
+				<label class="block-form__label">CPF:</label>
+				<input class="block-form__input" type="text" placeholder="Seu CPF">
+			</div>
+			<div class="block-form__input-row">
+				<label class="block-form__label">E-mail:</label>
+				<input class="block-form__input" type="text" placeholder="Seu E-mail">
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="block-form__input-row">
+				<label class="block-form__label">Data de nascimento:</label>
+				<input class="block-form__input block-form__input--date" type="date" placeholder="dd/mm/aaaa">
+			</div>
+			<div class="block-form__input-row">
+				<label class="block-form__label">Telefone celular:</label>
+				<input class="block-form__input" type="text" placeholder="(00) 0000-0000">
+			</div>
+			<div class="block-form__input-row">
+				<label class="block-form__label">Telefone residencial:</label>
+				<input class="block-form__input" type="text" placeholder="(00) 0000-0000">
+			</div>
+		</div>
+	</form>
+	<h3 class="como-funciona__text como-funciona__text--left">Proposta escolhida:</h3>
+	<div class="pre-scrollable">
+		<table class="block-table">
+			<tr class="block-table__row">
+				<th>Contratos</th>
+				<th>Data do contrato</th>
+				<th>Nº de parcelas de contrato</th>
+				<th>Valor atualizado</th>
+				<th>Valor de desconto</th>
+				<th>Local de compra</th>
+			</tr>
+			<tr class="block-table__row">
+				<td>00383FF</td>
+				<td>10/02/2015</td>
+				<td>18</td>
+				<td>R$ 3.450,23</td>
+				<td>R$ 2.220,43</td>
+				<td>Loja nº 01</td>
+			</tr>
+			<tr class="block-table__row">
+				<th>Propostas</th>
+				<td>Á VISTA</td>
+				<td>R$ 400,00</td>
+				<td>25/12/2016</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<h3 class="como-funciona__text como-funciona__text--left">Escolha como deseja receber seu boleto:</h3>
+	<div class="row block-form__input-row">
+		<div class="col-sm-6">
+			<button type="button" class="block-form__submit block-form__submit--left"><img class="block-form__submit--img" src="img/print.svg"></button>
+			<button type="button" class="block-form__submit block-form__submit--left"><img class="block-form__submit--img" src="img/sms.svg"></button>
+			<button type="button" class="block-form__submit block-form__submit--left"><img class="block-form__submit--img" src="img/email.svg"></button>
+		</div>
+		<div class="col-sm-6">
+			<button type="button" class="block-form__submit" id="sucesso-submit">Negociar outros contratos</button>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="como-funciona" class="como-funciona">
+	<div class="container">
+			<h1 class="como-funciona__text como-funciona__text--underlined">Como funciona</h1>
+			<div class="row">
+				<div class="como-funciona__col col-sm-4">
+					<img class="como-funciona__img" src="img/icones-1.png">
+					<h2 class="como-funciona__text">Procure</h2>
+					<h3 class="como-funciona__text">Consulte suas dívidas negociáveis através de seu CPF e Data de Nascimento</h3>
+				</div>
+				<div class="como-funciona__col col-sm-4">
+					<img class="como-funciona__img" src="img/icones-2.png">
+					<h2 class="como-funciona__text">Negocie</h2>
+					<h3 class="como-funciona__text">Negocie suas dívidas com preços que cabem no seu bolso</h3>
+				</div>
+				<div class="como-funciona__col col-sm-4">
+					<img class="como-funciona__img" src="img/icones-3.png">
+					<h2 class="como-funciona__text">Gere o boleto</h2>
+					<h3 class="como-funciona__text">Após fechar seu acordo, gere o boleto e limpe o seu nome!</h3>
+				</div>
+			</div>
+	</div>
+</section>
+	Liquid syntax error: Tag '{%' was not properly terminated with regexp: /\%\}/ 
+</body>
+</html>
