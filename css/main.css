@@ -152,6 +152,15 @@ a:hover, a:active, a:focus {
         float: left;
         width: 90%;
         height: auto; } }
+  .block-form__input-row img {
+    height: 30px;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 20px; }
+    @media only screen and (max-width: 992px) {
+      .block-form__input-row img {
+        margin-left: -50px;
+        margin-top: 15px; } }
   .block-form__label {
     width: 15%;
     text-align: left;
@@ -288,6 +297,15 @@ a:hover, a:active, a:focus {
 
 .header-segunda-pagina {
   border-bottom: solid 3px #006a00; }
+  .header-segunda-pagina h1 {
+    color: #1A4757;
+    margin-top: 75px; }
+    @media only screen and (max-width: 1199px) {
+      .header-segunda-pagina h1 {
+        margin-top: 60px; } }
+    @media only screen and (max-width: 991px) {
+      .header-segunda-pagina h1 {
+        margin-top: 45px; } }
   .header-segunda-pagina__img {
     width: 100%;
     margin-top: 20px;
@@ -364,6 +382,16 @@ a:hover, a:active, a:focus {
     .header-segunda-pagina .step--activated .number, .header-segunda-pagina .step--activated .line {
       background-color: #1A4757;
       color: #fff; }
+  @media only screen and (max-width: 767px) {
+    .header-segunda-pagina .steps-names {
+      display: none; } }
+  .header-segunda-pagina .steps-names p {
+    text-align: center;
+    font-weight: bold; }
+  .header-segunda-pagina .steps-names__active {
+    color: #1A4757; }
+  .header-segunda-pagina .steps-names__inactive {
+    color: #888; }
 
 .footer {
   background-color: #1A4757;
