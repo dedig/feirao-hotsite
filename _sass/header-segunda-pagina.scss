@@ -2,6 +2,19 @@
 	@extend %gradient;
 	border-bottom: solid 3px $green;
 
+	h1 {
+		color: $deepGreen;
+		margin-top: 75px;
+
+		@media only screen and (max-width: 1199px) {
+			margin-top: 60px;
+		}
+
+		@media only screen and (max-width: 991px) {
+			margin-top: 45px;
+		}
+	}
+
 	&__img {
 		width: 100%;
 		margin-top: 20px;
@@ -108,6 +121,25 @@
 				background-color: #1A4757;
 				color: #fff;
 			}
+		}
+	}
+
+	.steps-names {
+		@media only screen and (max-width: 767px) {
+			display: none;
+		}
+
+		p {
+			text-align: center;
+			font-weight: bold;
+		}
+
+		&__active {
+			color: $deepGreen;
+		}
+
+		&__inactive {
+			color: #888;
 		}
 	}
 }

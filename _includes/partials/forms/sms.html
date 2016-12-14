@@ -1,7 +1,27 @@
 <div class="block-form" id="sms">
-	<h1>Foi enviado um SMS com a senha do seu cadastro para o seu celular!</h1>
-	<h2>Já possui a senha? Acesse já as suas propostas!</h2>
-	<div class="block-form__input-row">
-		<button type="button" class="block-form__submit block-form__submit--w-label block-form__submit--center" id="sms-submit">Acessar propostas</button>
+	<div class="row">
+		<div class="col-sm-6">
+			<h1>Foi enviado um SMS com a senha do seu cadastro para o seu celular!</h1>
+			<div class="block-form__input-row">
+				<label class="block-form__label">Código:</label>
+				<input class="block-form__input block-form__input--w-label" type="text" placeholder="000000">
+				<img src="img/positive.svg">
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<h1>Agora cadastre sua senha para acessar as melhores propostas:</h1>
+			<div class="block-form__input-row">
+				<label class="block-form__label">Cadastrar senha:</label>
+				<input class="block-form__input block-form__input--w-label" type="text" placeholder="senha">
+			</div>
+			<div class="block-form__input-row">
+				<label class="block-form__label">Confirmar senha:</label>
+				<input class="block-form__input block-form__input--w-label" type="text" placeholder="senha">
+				<img src="img/negative.svg">
+			</div>
+			<div class="block-form__input-row">
+				<button type="button" class="block-form__submit block-form__submit--w-label" id="sms-submit">Acessar propostas</button>
+			</div>
+		</div>
 	</div>
 </div>
