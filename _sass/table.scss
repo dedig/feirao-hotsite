@@ -11,12 +11,12 @@
 	float: left;
 
 	&__row {
-		@extend %row;
+		//@extend %row;
 		width: 100%;
 		margin: 0 !important;
 
 		td, th {
-			width: 11.11111%;
+			//width: 12%;//11.11111%;
 			height: 100%;
 			padding: 20px;
 			color: #fff;
@@ -32,6 +32,7 @@
 
 		th {
 			background-color: #acabaa;
+			min-width: 118px;
 		}
 	}
 
