@@ -26,18 +26,6 @@
 
 	&__input-row {
 		@extend %row;
-
-		img {
-			height:30px;
-			position:absolute;
-			margin-left:-60px;
-			margin-top:20px;
-
-			@media only screen and (max-width: 992px) {
-				margin-left: -50px;
-				margin-top: 15px;
-			}
-		}
 	}
 
 	&__label {
@@ -163,5 +151,17 @@
 		&--w-label {
 			margin-right: 20px;
 		}
+	}
+}
+
+.success, .fail {
+	height:30px;
+	position:absolute;
+	margin-left:-60px;
+	margin-top:20px;
+
+	@media only screen and (max-width: 992px) {
+		margin-left: -50px;
+		margin-top: 15px;
 	}
 }

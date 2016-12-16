@@ -142,25 +142,16 @@ a:hover, a:active, a:focus {
   margin-bottom: 25px; }
   .block-form h2 {
     text-align: center; }
-  .block-form .block-form__input-row, .block-form .block-table__row {
+  .block-form .block-form__input-row {
     height: 70px;
     margin: 10px 0;
     padding-right: 0; }
     @media only screen and (max-width: 992px) {
-      .block-form .block-form__input-row, .block-form .block-table__row {
+      .block-form .block-form__input-row {
         margin: 0 5%;
         float: left;
         width: 90%;
         height: auto; } }
-  .block-form__input-row img {
-    height: 30px;
-    position: absolute;
-    margin-left: -60px;
-    margin-top: 20px; }
-    @media only screen and (max-width: 992px) {
-      .block-form__input-row img {
-        margin-left: -50px;
-        margin-top: 15px; } }
   .block-form__label {
     width: 15%;
     text-align: left;
@@ -241,6 +232,16 @@ a:hover, a:active, a:focus {
   .block-form__submit--w-label {
     margin-right: 20px; }
 
+.success, .fail {
+  height: 30px;
+  position: absolute;
+  margin-left: -60px;
+  margin-top: 20px; }
+  @media only screen and (max-width: 992px) {
+    .success, .fail {
+      margin-left: -50px;
+      margin-top: 15px; } }
+
 .pre-scrollable {
   height: auto;
   width: 100%;
@@ -255,7 +256,6 @@ a:hover, a:active, a:focus {
     width: 100%;
     margin: 0 !important; }
     .block-table__row td, .block-table__row th {
-      width: 11.11111%;
       height: 100%;
       padding: 20px;
       color: #fff;
@@ -266,7 +266,8 @@ a:hover, a:active, a:focus {
     .block-table__row td {
       background-color: #cecdcc; }
     .block-table__row th {
-      background-color: #acabaa; }
+      background-color: #acabaa;
+      min-width: 118px; }
   .block-table__button {
     height: auto !important;
     max-height: 80px !important;
