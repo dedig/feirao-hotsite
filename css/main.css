@@ -110,6 +110,9 @@ a:hover, a:active, a:focus {
         width: 100%;
         margin: 15px 0; } }
 
+@media only screen and (max-width: 550px) {
+  .block-contatos__item {
+    width: 100%; } }
 .block-contatos__img {
   padding: 10px; }
 
@@ -231,6 +234,20 @@ a:hover, a:active, a:focus {
     width: 30px; }
   .block-form__submit--w-label {
     margin-right: 20px; }
+  .block-form__submit--spin {
+    cursor: default; }
+    .block-form__submit--spin:hover, .block-form__submit--spin:focus, .block-form__submit--spin:active {
+      background-color: #006a00 !important; }
+@keyframes rot {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+    .block-form__submit--spin img {
+      animation-name: rot;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
 
 .success, .fail {
   height: 30px;

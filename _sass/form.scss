@@ -151,6 +151,26 @@
 		&--w-label {
 			margin-right: 20px;
 		}
+
+		&--spin {
+			cursor: default;
+
+			&:hover, &:focus, &:active {
+				background-color: $green !important;
+			}
+
+			@keyframes rot {
+				from {transform: rotate(0deg);}
+				to {transform: rotate(360deg);}
+			}
+
+			img {
+				animation-name: rot;
+				animation-duration: 1s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+		}
 	}
 }
 
